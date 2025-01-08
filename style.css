@@ -1,0 +1,68 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title styles */
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* Outer div styles for layout */
+.outerDiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Inner div styles for buttons */
+.innerDiv {
+    height: 200px;
+    width: 200px;
+    background-color: #ccc;
+    margin: 10px;
+    border: 5px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button colors */
+#red {
+    background-color: #e74c3c; /* Red */
+}
+
+#green {
+    background-color: #2ecc71; /* Green */
+}
+
+#orange {
+    background-color: #f39c12; /* Orange */
+}
+
+#blue {
+    background-color: #3498db; /* Blue */
+}
+
+/* Flashing effect for button presses */
+.flash {
+    background-color: white !important; 
+    transform: scale(1.1); /* Slightly enlarge button */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.innerDiv:active {
+    transform: scale(0.95); /* Slightly shrink button when clicked */
+}
